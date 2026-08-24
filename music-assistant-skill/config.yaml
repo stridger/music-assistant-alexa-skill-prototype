@@ -1,0 +1,46 @@
+name: "Music Assistant Alexa Skill"
+version: "latest"
+slug: "music_assistant_alexa_skill"
+description: "Alexa skill for controlling Music Assistant"
+url: "https://github.com/stridger/music-assistant-alexa-skill-prototype"
+arch:
+  - amd64
+  - aarch64
+startup: application
+boot: auto
+init: false
+legacy: true
+
+image: "ghcr.io/alams154/music-assistant-alexa-skill-prototype"
+
+ports:
+  5000/tcp: 5000
+  5678/tcp: null
+
+ports_description:
+  5000/tcp: "Web interface"
+  5678/tcp: "Debug port"
+
+options:
+  SKILL_HOSTNAME: ""
+  MA_HOSTNAME: ""
+  APP_USERNAME: ""
+  APP_PASSWORD: ""
+  PORT: 5000
+  DEBUG_PORT: 5678
+  LOCALE: "en-GB"
+  AWS_DEFAULT_REGION: "us-east-1"
+  TZ: "Europe/London"
+  SKIP_URL_VALIDATION: false
+
+schema:
+  SKILL_HOSTNAME: str
+  MA_HOSTNAME: str?
+  APP_USERNAME: str?
+  APP_PASSWORD: password?
+  PORT: port
+  DEBUG_PORT: port
+  LOCALE: str
+  AWS_DEFAULT_REGION: str
+  TZ: str
+  SKIP_URL_VALIDATION: bool
