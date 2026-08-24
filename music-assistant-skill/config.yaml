@@ -11,7 +11,7 @@ boot: auto
 init: false
 legacy: true
 
-image: "ghcr.io/alams154/music-assistant-alexa-skill"
+image: "ghcr.io/alams154/music-assistant-skill"
 
 ports:
   5000/tcp: 5000
