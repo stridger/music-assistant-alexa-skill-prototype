@@ -32,6 +32,9 @@ options:
   AWS_DEFAULT_REGION: "us-east-1"
   TZ: "Europe/London"
   SKIP_URL_VALIDATION: false
+  ENABLE_APL: false
+  MA_API_URL: ""
+  MA_API_TOKEN: ""
 
 schema:
   SKILL_HOSTNAME: str
@@ -44,3 +47,7 @@ schema:
   AWS_DEFAULT_REGION: str
   TZ: str
   SKIP_URL_VALIDATION: bool
+  ENABLE_APL: bool
+  MA_API_URL: str
+  MA_API_TOKEN: str
+
