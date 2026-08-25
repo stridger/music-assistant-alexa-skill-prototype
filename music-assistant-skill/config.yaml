@@ -1,5 +1,5 @@
 name: "Music Assistant Alexa Skill"
-version: "latest"
+version: "latest.1"
 slug: "music_assistant_alexa_skill"
 description: "Alexa skill for controlling Music Assistant"
 url: "https://github.com/stridger/music-assistant-alexa-skill-prototype"
